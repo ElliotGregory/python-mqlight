@@ -27,7 +27,8 @@ if not sys.version_info[:2] >= (2, 6):
     sys.exit(1)
 
 HERE = path.abspath(path.dirname(__file__))
-with codecs_open(path.join(HERE, 'description.rst'), encoding='utf-8') as f:
+with codecs_open(path.join(HERE, 'docs', 'description.rst'),
+                 encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
 
 if system() == 'Darwin':
